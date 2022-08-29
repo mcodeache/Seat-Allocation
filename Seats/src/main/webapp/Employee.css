@@ -1,0 +1,129 @@
+@charset "UTF-8";
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #04aa6d;
+}
+
+/* general layout CSS */
+button
+{
+	width: 15%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #04aa6d;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+} 
+
+.container{
+    margin:20px 20px 20px 20px;
+    text-align: center;
+    width: 96%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+input{
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+    
+input[type = submit]
+{
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 8px;
+    width: 10%;
+    text-align: center;
+    background-color: #04aa6d;
+    color: white;
+}
+
+
+/* PopUp */
+
+.Ncontainer
+{ 
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgb(6, 81, 100);
+    
+}
+
+.btn
+{
+    padding: 10px 60px;
+    background:#fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup
+{
+    width: 400px;
+    background:#fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding:0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup
+{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.popup img{
+    width:100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+    
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+}
